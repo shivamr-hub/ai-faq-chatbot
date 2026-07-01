@@ -70,7 +70,8 @@ class SmartSupportBot {
     if (this._isGreeting(input)) {
       return {
         text: `Hello! 👋 Welcome to ${BUSINESS.name}. How can I help you today?`,
-        type: 'greeting'
+        type: 'greeting',
+        options: CHAT_MENU.main.options
       };
     }
 
@@ -90,7 +91,8 @@ class SmartSupportBot {
       return {
         text:       match.answer,
         confidence: match.score,
-        type:       'faq'
+        type:       'faq',
+        options: CHAT_MENU.main.options
       };
     }
 
@@ -99,7 +101,8 @@ class SmartSupportBot {
     ──────────────────────────────────────────────────────── */
     return {
       text: this._getFallback(),
-      type: 'fallback'
+      type: 'fallback',
+      options: CHAT_MENU.main.options
     };
   }
 

@@ -42,10 +42,25 @@ const DOM = {
  * and easier to read the structure at a glance.
  */
 function renderMessage(message) {
-  const { id, role, text, time } = message;
+  const { id, role, text, time, options } = message;
 
   const isBot  = role === 'bot';
   const avatar = isBot ? '🤖' : '👤';
+
+  let optionsHtml = '';
+  if (isBot && options && options.length > 0) {
+    optionsHtml = `
+      <div class="message-options" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+        ${options.map((opt, idx) => `
+          <button class="chat-option-btn" 
+                  style="text-align: left; background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.25); color: var(--primary); padding: 8px 12px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s;"
+                  data-option-index="${idx}">
+            ${opt.label}
+          </button>
+        `).join('')}
+      </div>
+    `;
+  }
 
   // Build the HTML structure for the message bubble
   const html = `
@@ -53,6 +68,7 @@ function renderMessage(message) {
       <div class="message-avatar">${avatar}</div>
       <div class="message-bubble">
         <p>${text}</p>
+        ${optionsHtml}
         <span class="message-time">${time}</span>
       </div>
     </div>
@@ -60,6 +76,28 @@ function renderMessage(message) {
 
   // Insert at the end of the messages container
   DOM.chatMessages.insertAdjacentHTML('beforeend', html);
+
+  // Attach click listeners to option buttons
+  if (isBot && options && options.length > 0) {
+    const messageEl = document.getElementById(id);
+    messageEl.querySelectorAll('.chat-option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const optIdx = parseInt(btn.dataset.optionIndex);
+        const selectedOption = options[optIdx];
+        
+        // Disable other buttons
+        messageEl.querySelectorAll('.chat-option-btn').forEach(b => {
+          b.disabled = true;
+          b.style.opacity = '0.5';
+          b.style.cursor = 'not-allowed';
+        });
+
+        if (window.onChatOptionSelect) {
+          window.onChatOptionSelect(selectedOption);
+        }
+      });
+    });
+  }
 
   // Always scroll to the latest message after rendering
   scrollToBottom();

@@ -125,3 +125,43 @@ const BUSINESS = {
   ]
 
 };
+
+/* ── Interactive Chatbot Option Menu Tree ────────────────── */
+const CHAT_MENU = {
+  main: {
+    text: "Please select an option to get started:",
+    options: [
+      { label: "📁 Our Services", next: "services" },
+      { label: "💰 Packages & Pricing", next: "pricing_options" },
+      { label: "🕐 Contact & Hours", next: "hours_contact" },
+      { label: "🚀 Get a Custom Quote", action: "start_lead" }
+    ]
+  },
+  services: {
+    text: "Here are the custom automation services we offer:",
+    options: [
+      { label: "🤖 AI Customer Chatbots", answer: "We build custom AI chatbots that answer FAQs, collect leads, and work 24/7 for your business." },
+      { label: "💻 Web Development", answer: "We design and develop modern, responsive websites optimized for conversions." },
+      { label: "⚙️ Workflow Automation", answer: "We build AI automations that save your team hours of repetitive work every week." },
+      { label: "← Back to Main Menu", next: "main" }
+    ]
+  },
+  pricing_options: {
+    text: "We offer clear, project-based packages. What are you looking to start with?",
+    options: [
+      { label: "Launch Package (₹3,999)", answer: "Our Launch Package starts at ₹3,999. Includes custom FAQ chatbot, hours config, and hosting setup." },
+      { label: "Growth Package (₹7,999)", answer: "Our Growth Package starts at ₹7,999. Includes FAQ chatbot + lead qualifier wizard + dashboard + CSV exports." },
+      { label: "Scale Package (Custom Quote)", answer: "Scale Package is custom quoted. Includes widgets, sheets integration, and 3 months support." },
+      { label: "← Back to Main Menu", next: "main" }
+    ]
+  },
+  hours_contact: {
+    text: "Here is our contact and timing information:",
+    options: [
+      { label: "Business Hours", answer: "We're open Monday to Friday, 9AM–6PM. Closed on weekends." },
+      { label: "Contact Details", answer: "You can reach us at +91 63555 79882 or booking.shivamr@gmail.com." },
+      { label: "← Back to Main Menu", next: "main" }
+    ]
+  }
+};
+

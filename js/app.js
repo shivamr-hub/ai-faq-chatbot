@@ -38,14 +38,18 @@ function init() {
     messageLog = history;
     renderChatHistory(history);
   } else {
-    // First visit — show the default welcome message that's in the HTML
-    // and log it so it gets saved with future messages
-    messageLog.push({
+    // First visit — clear hardcoded welcome and render it with buttons
+    DOM.chatMessages.innerHTML = '';
+    const welcomeMsg = {
       id:   'msg-welcome',
       role: 'bot',
-      text: 'Hello 👋 How can I help you today?',
-      time: 'Just now'
-    });
+      text: 'Hello! 👋 Welcome to SmartSupport AI. How can I help you today?',
+      time: 'Just now',
+      options: CHAT_MENU.main.options
+    };
+    renderMessage(welcomeMsg);
+    messageLog.push(welcomeMsg);
+    saveChatHistory(messageLog);
   }
 
   // 3. Show suggested question pills below the chat window
@@ -182,6 +186,64 @@ function _bindEvents() {
   });
 }
 
+/**
+ * Handles selection of a menu option button in the chat.
+ */
+window.onChatOptionSelect = async function(option) {
+  // 1. Render User choice as a message bubble
+  const userMsg = {
+    id: generateId(),
+    role: 'user',
+    text: option.label,
+    time: getTimestamp()
+  };
+  renderMessage(userMsg);
+  messageLog.push(userMsg);
+  saveChatHistory(messageLog);
+
+  // Lock input and show loading dots
+  disableInput();
+  showTypingIndicator();
+
+  // Simulate a realistic short typing delay
+  await delay(500 + Math.random() * 400);
+  hideTypingIndicator();
+
+  // 2. Determine bot reply based on option data
+  let botReply = { text: "" };
+
+  if (option.next) {
+    const nextMenu = CHAT_MENU[option.next];
+    botReply = {
+      text: nextMenu.text,
+      options: nextMenu.options
+    };
+  } else if (option.answer) {
+    botReply = {
+      text: option.answer,
+      options: CHAT_MENU.main.options // default back to main menu
+    };
+  } else if (option.action === 'start_lead') {
+    const leadResponse = bot._startLeadCapture();
+    botReply = {
+      text: leadResponse.text
+    };
+  }
+
+  // 3. Render bot response
+  const botMsg = {
+    id: generateId(),
+    role: 'bot',
+    text: botReply.text,
+    time: getTimestamp(),
+    options: botReply.options
+  };
+
+  renderMessage(botMsg);
+  messageLog.push(botMsg);
+  saveChatHistory(messageLog);
+  enableInput();
+};
 
 /* ============================================================
    Bootstrap — start the app when the page finishes loading.
