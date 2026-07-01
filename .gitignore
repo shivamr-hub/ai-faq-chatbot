@@ -1,0 +1,55 @@
+# ============================================================
+# .gitignore — SmartSupport AI
+# Tells Git which files NOT to track or upload to GitHub.
+# ============================================================
+
+# --- OS-generated files ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Editor/IDE files ---
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# --- Environment & config files ---
+# If you ever add a backend or API keys, exclude them here
+.env
+.env.local
+.env.production
+*.env
+
+# --- Node.js (if you ever add build tools) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# --- Build output (if you ever add a bundler) ---
+dist/
+build/
+.cache/
+
+# --- Log files ---
+*.log
+
+# --- Temporary files ---
+*.tmp
+*.bak
+*.swp
+*~
