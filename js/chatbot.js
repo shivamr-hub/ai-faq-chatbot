@@ -141,7 +141,8 @@ class SmartSupportBot {
    * @returns {boolean}
    */
   _isGreeting(input) {
-    return BUSINESS.greetings.some(g => input.includes(g));
+    const words = input.split(/\s+/);
+    return BUSINESS.greetings.some(g => words.includes(g));
   }
 
   /**
