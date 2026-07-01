@@ -18,8 +18,8 @@ const BUSINESS = {
   description: "AI-powered customer support assistant for modern businesses.",
 
   contact: {
-    phone:   "+91 98765 43210",
-    email:   "hello@smartsupport.ai",
+    phone:   "+91 63555 79882",
+    email:   "booking.shivamr@gmail.com",
     address: "Mumbai, Maharashtra"
   },
 
@@ -49,11 +49,11 @@ const BUSINESS = {
     },
     {
       keywords: ["phone", "call", "number", "contact", "reach", "talk"],
-      answer: "You can call us at +91 98765 43210. We're available Mon–Fri, 9AM–6PM."
+      answer: "You can call us at +91 63555 79882. We're available Mon–Fri, 9AM–6PM."
     },
     {
       keywords: ["email", "mail", "write", "message"],
-      answer: "Send us an email at hello@smartsupport.ai and we'll reply within 24 hours."
+      answer: "Send us an email at booking.shivamr@gmail.com and we'll reply within 24 hours."
     },
     {
       keywords: ["address", "location", "where", "office", "visit", "place"],
@@ -107,10 +107,10 @@ const BUSINESS = {
      feel robotic when triggered multiple times.
   ──────────────────────────────────────────────────────────── */
   fallbackReplies: [
-    "I'm not sure about that, but I'd love to help! You can reach us at +91 98765 43210 or hello@smartsupport.ai.",
-    "Great question! For detailed information, please call us at +91 98765 43210 or drop an email.",
+    "I'm not sure about that, but I'd love to help! You can reach us at +91 63555 79882 or booking.shivamr@gmail.com.",
+    "Great question! For detailed information, please call us at +91 63555 79882 or drop an email.",
     "I don't have an answer for that right now. Would you like me to collect your details so our team can follow up?",
-    "That's a bit outside my knowledge base! Feel free to contact us directly at hello@smartsupport.ai."
+    "That's a bit outside my knowledge base! Feel free to contact us directly at booking.shivamr@gmail.com."
   ],
 
   /* ── Suggested Questions ───────────────────────────────────
