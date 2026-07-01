@@ -15,7 +15,19 @@ Answers FAQs instantly. Captures leads automatically. Works 24/7.
 
 ---
 
-> 📸 *Screenshots coming after deployment*
+## 📸 Screenshots
+
+| Homepage | Chat Demo | Mobile View |
+|---|---|---|
+| ![Homepage](assets/screenshots/homepage.jpeg) | ![Chat](assets/screenshots/chatbot.jpeg) | ![Mobile](assets/screenshots/mobile_responsive.jpeg) |
+
+---
+
+## 🎥 Demo Video
+
+[![Watch Demo](assets/screenshots/homepage.jpeg)](assets/screenshots/smartai.mp4)
+
+> Click the image above to watch the 45-second demo, or [download it directly](assets/screenshots/smartai.mp4).
 
 ---
 
