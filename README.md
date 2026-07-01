@@ -25,10 +25,10 @@ Answers FAQs instantly. Captures leads automatically. Works 24/7.
 
 ## 🎥 Demo Video
 
-[![Watch Demo](assets/screenshots/homepage.jpeg)](https://www.loom.com/share/YOUR_LOOM_LINK_HERE)
+[![Watch Demo](assets/screenshots/homepage.jpeg)](https://www.loom.com/share/af6a4e67ddb249d5aa2a3bfc81210541)
 
-> 📌 **[Click to watch the 60-second demo →](https://www.loom.com/share/YOUR_LOOM_LINK_HERE)**  
-> *(Replace this link with your actual Loom or YouTube URL)*
+> 📌 **[Click to watch the 60-second demo →](https://www.loom.com/share/af6a4e67ddb249d5aa2a3bfc81210541)**  
+
 
 ---
 
