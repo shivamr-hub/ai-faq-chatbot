@@ -2,465 +2,460 @@
 <html lang="en">
 
 <head>
-  <!-- Character encoding — tells the browser to use UTF-8 (supports emojis, special chars) -->
-  <meta charset="UTF-8" />
+    <!-- Character encoding — tells the browser to use UTF-8 (supports emojis, special chars) -->
+    <meta charset="UTF-8" />
 
-  <!-- Makes the page responsive on mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO: What shows up in Google search results -->
-  <meta name="description"
-    content="SmartSupport AI — 24/7 AI-powered customer support chatbot for modern businesses. Collect leads, answer FAQs, and never miss a customer." />
+    <!-- SEO: What shows up in Google search results -->
+    <meta name="description"
+        content="SmartSupport AI — 24/7 AI-powered customer support chatbot for modern businesses. Collect leads, answer FAQs, and never miss a customer." />
 
-  <!-- Page title — shows in browser tab -->
-  <title>SmartSupport AI | AI Customer Support Assistant</title>
+    <!-- Page title — shows in browser tab -->
+    <title>SmartSupport AI | AI Customer Support Assistant</title>
 
-  <!-- Link to our CSS file (Stage 2 — not built yet) -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- Link to our CSS file (Stage 2 — not built yet) -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <!-- ============================================================
+    <!-- ============================================================
        <header> wraps both the navbar and hero section.
        Why: <header> is the semantic HTML5 landmark for the top
        of a page. It tells browsers, screen readers, and search
        engines: "this is the introductory content of the page."
        It improves accessibility and SEO structure.
   ============================================================ -->
-  <header id="site-header">
+    <header id="site-header">
 
-    <!-- NAVBAR
+        <!-- NAVBAR
          - Stays at the top of the page
          - Contains logo + navigation links
     -->
-    <nav id="navbar">
-      <div class="nav-container">
+        <nav id="navbar">
+            <div class="nav-container">
 
-        <!-- Logo / Brand name -->
-        <div class="nav-logo">
-          <span class="logo-icon">🤖</span>
-          <span class="logo-text">SmartSupport AI</span>
-        </div>
+                <!-- Logo / Brand name -->
+                <div class="nav-logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">SmartSupport AI</span>
+                </div>
 
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#demo">Demo</a></li>
-          <li><a href="#business">Contact</a></li>
-          <li><a href="#contact" class="nav-cta">Get Started</a></li>
-        </ul>
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#business">Contact</a></li>
+                    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+                </ul>
 
-      </div>
-    </nav>
-    <!-- END NAVBAR -->
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
 
 
-    <!-- HERO SECTION
+        <!-- HERO SECTION
          - First thing the visitor sees inside the <header>
          - Big title, subtitle, feature highlights, and action buttons
     -->
-    <section id="hero">
-      <div class="hero-container">
+        <section id="hero">
+            <div class="hero-container">
 
-        <!-- Badge above the title -->
-        <div class="hero-badge">
-          <span>✨ AI-Powered Customer Support</span>
-        </div>
+                <!-- Badge above the title -->
+                <div class="hero-badge">
+                    <span>✨ AI-Powered Customer Support</span>
+                </div>
 
-        <!-- Main heading — the biggest text on the page -->
-        <h1 class="hero-title">SmartSupport AI</h1>
+                <!-- Main heading — the biggest text on the page -->
+                <h1 class="hero-title">SmartSupport AI</h1>
 
-        <!-- Subheading — benefit-focused, not feature-focused -->
-        <!-- Rule: Tell the visitor what THEY gain, not what the product does -->
-        <p class="hero-subtitle">
-          Reduce your customer support workload with an AI assistant<br />
-          that answers FAQs, captures leads, and works 24/7 —<br />
-          <strong>without hiring anyone.</strong>
-        </p>
+                <!-- Subheading — benefit-focused, not feature-focused -->
+                <!-- Rule: Tell the visitor what THEY gain, not what the product does -->
+                <p class="hero-subtitle">
+                    Reduce your customer support workload with an AI assistant<br />
+                    that answers FAQs, captures leads, and works 24/7 —<br />
+                    <strong>without hiring anyone.</strong>
+                </p>
 
-        <!-- Three key selling points listed horizontally -->
-        <ul class="hero-features">
-          <li>
-            <span class="feature-dot success"></span>
-            Available 24/7
-          </li>
-          <li>
-            <span class="feature-dot primary"></span>
-            Collect Leads
-          </li>
-          <li>
-            <span class="feature-dot warning"></span>
-            Answer FAQs
-          </li>
-        </ul>
+                <!-- Three key selling points listed horizontally -->
+                <ul class="hero-features">
+                    <li>
+                        <span class="feature-dot success"></span>
+                        Available 24/7
+                    </li>
+                    <li>
+                        <span class="feature-dot primary"></span>
+                        Collect Leads
+                    </li>
+                    <li>
+                        <span class="feature-dot warning"></span>
+                        Answer FAQs
+                    </li>
+                </ul>
 
-        <!-- Call-to-action buttons -->
-        <div class="hero-buttons">
-          <!-- Primary button — arrow makes it feel interactive -->
-          <a href="#demo" id="btn-try-demo" class="btn btn-primary">
-            🚀 Try Live Demo →
-          </a>
+                <!-- Call-to-action buttons -->
+                <div class="hero-buttons">
+                    <!-- Primary button — arrow makes it feel interactive -->
+                    <a href="#demo" id="btn-try-demo" class="btn btn-primary">
+                        🚀 Try Live Demo →
+                    </a>
 
-          <!-- Secondary button — less important action -->
-          <a href="#contact" id="btn-contact" class="btn btn-secondary">
-            📞 Contact
-          </a>
-        </div>
+                    <!-- Secondary button — less important action -->
+                    <a href="#contact" id="btn-contact" class="btn btn-secondary">
+                        📞 Contact
+                    </a>
+                </div>
 
-      </div>
-    </section>
-    <!-- END HERO SECTION -->
+            </div>
+        </section>
+        <!-- END HERO SECTION -->
 
-  </header>
-  <!-- END SITE HEADER -->
+    </header>
+    <!-- END SITE HEADER -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        TRUST INDICATORS SECTION
        - Sits directly below the hero — the first thing seen after the headline
        - Purpose: Build instant credibility before the visitor scrolls further
        - Star ratings + checkmarks are proven to reduce bounce rate
   ============================================================ -->
-  <section id="trust">
-    <div class="section-container">
+    <section id="trust">
+        <div class="section-container">
 
-      <!-- Star Rating — social proof -->
-      <!-- NOTE: Only use real numbers here once you have actual clients.
+            <!-- Star Rating — social proof -->
+            <!-- NOTE: Only use real numbers here once you have actual clients.
            Using made-up stats damages credibility if a visitor asks.
            Use aspirational-but-honest language until then. -->
-      <div class="trust-rating" id="trust-rating">
-        <span class="stars">⭐⭐⭐⭐⭐</span>
-        <span class="rating-text">Built for small businesses</span>
-      </div>
+            <div class="trust-rating" id="trust-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="rating-text">Built for small businesses</span>
+            </div>
 
-      <!-- Four key guarantees — each one removes a reason NOT to buy -->
-      <ul class="trust-list" id="trust-list">
+            <!-- Four key guarantees — each one removes a reason NOT to buy -->
+            <ul class="trust-list" id="trust-list">
 
-        <li class="trust-item">
-          <!-- ✓ is more confident than a bullet point -->
-          <span class="trust-check">✓</span>
-          <span>Lead Collection — never miss a potential customer</span>
-        </li>
+                <li class="trust-item">
+                    <!-- ✓ is more confident than a bullet point -->
+                    <span class="trust-check">✓</span>
+                    <span>Lead Collection — never miss a potential customer</span>
+                </li>
 
-        <li class="trust-item">
-          <span class="trust-check">✓</span>
-          <span>FAQ Automation — answer repetitive questions instantly</span>
-        </li>
+                <li class="trust-item">
+                    <span class="trust-check">✓</span>
+                    <span>FAQ Automation — answer repetitive questions instantly</span>
+                </li>
 
-        <li class="trust-item">
-          <span class="trust-check">✓</span>
-          <span>24/7 Availability — your support never sleeps</span>
-        </li>
+                <li class="trust-item">
+                    <span class="trust-check">✓</span>
+                    <span>24/7 Availability — your support never sleeps</span>
+                </li>
 
-        <li class="trust-item">
-          <span class="trust-check">✓</span>
-          <span>Mobile Friendly — works perfectly on any device</span>
-        </li>
+                <li class="trust-item">
+                    <span class="trust-check">✓</span>
+                    <span>Mobile Friendly — works perfectly on any device</span>
+                </li>
 
-      </ul>
+            </ul>
 
-    </div>
-  </section>
-  <!-- END TRUST INDICATORS SECTION -->
+        </div>
+    </section>
+    <!-- END TRUST INDICATORS SECTION -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        FEATURES SECTION
        - Three cards showing key benefits of the product
   ============================================================ -->
-  <section id="features">
-    <div class="section-container">
+    <section id="features">
+        <div class="section-container">
 
-      <!-- Section heading -->
-      <h2 class="section-title">Features</h2>
-      <p class="section-subtitle">Everything your business needs to run support on autopilot</p>
+            <!-- Section heading -->
+            <h2 class="section-title">Features</h2>
+            <p class="section-subtitle">Everything your business needs to run support on autopilot</p>
 
-      <!-- Three feature cards in a row -->
-      <div class="features-grid">
+            <!-- Three feature cards in a row -->
+            <div class="features-grid">
 
-        <!-- Card 1: Instant Responses -->
-        <div class="feature-card" id="feature-instant">
-          <div class="feature-icon">⚡</div>
-          <h3 class="feature-title">Instant Responses</h3>
-          <p class="feature-description">
-            Reply to customer queries in milliseconds — no wait time, no frustration. 
-            Your chatbot is always ready, day or night.
-          </p>
+                <!-- Card 1: Instant Responses -->
+                <div class="feature-card" id="feature-instant">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Instant Responses</h3>
+                    <p class="feature-description">
+                        Reply to customer queries in milliseconds — no wait time, no frustration.
+                        Your chatbot is always ready, day or night.
+                    </p>
+                </div>
+
+                <!-- Card 2: AI Powered -->
+                <div class="feature-card" id="feature-ai">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI Powered</h3>
+                    <p class="feature-description">
+                        Built on modern AI models that understand context and give smart,
+                        human-like answers — not just keyword matching.
+                    </p>
+                </div>
+
+                <!-- Card 3: Lead Collection -->
+                <div class="feature-card" id="feature-leads">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Lead Collection</h3>
+                    <p class="feature-description">
+                        Automatically capture visitor names, emails, and phone numbers
+                        so your sales team always has a hot list to follow up on.
+                    </p>
+                </div>
+
+            </div>
+            <!-- END features-grid -->
+
         </div>
-
-        <!-- Card 2: AI Powered -->
-        <div class="feature-card" id="feature-ai">
-          <div class="feature-icon">🤖</div>
-          <h3 class="feature-title">AI Powered</h3>
-          <p class="feature-description">
-            Built on modern AI models that understand context and give smart, 
-            human-like answers — not just keyword matching.
-          </p>
-        </div>
-
-        <!-- Card 3: Lead Collection -->
-        <div class="feature-card" id="feature-leads">
-          <div class="feature-icon">📈</div>
-          <h3 class="feature-title">Lead Collection</h3>
-          <p class="feature-description">
-            Automatically capture visitor names, emails, and phone numbers 
-            so your sales team always has a hot list to follow up on.
-          </p>
-        </div>
-
-      </div>
-      <!-- END features-grid -->
-
-    </div>
-  </section>
-  <!-- END FEATURES SECTION -->
+    </section>
+    <!-- END FEATURES SECTION -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        HOW IT WORKS SECTION
        - Placed between Features and Demo intentionally
        - Features tell WHAT it does; How It Works tells HOW
        - Business owners need to understand the workflow quickly
          before they commit to trying the demo
   ============================================================ -->
-  <section id="how-it-works">
-    <div class="section-container">
+    <section id="how-it-works">
+        <div class="section-container">
 
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-subtitle">Simple for your customers. Powerful for your business.</p>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple for your customers. Powerful for your business.</p>
 
-      <!-- Step-by-step flow — each step connected by a visual arrow -->
-      <div class="steps-flow" id="steps-flow">
+            <!-- Step-by-step flow — each step connected by a visual arrow -->
+            <div class="steps-flow" id="steps-flow">
 
-        <!-- Step 1 -->
-        <div class="step-item" id="step-1">
-          <div class="step-number">1️⃣</div>
-          <div class="step-content">
-            <h3 class="step-title">Customer Asks a Question</h3>
-            <p class="step-description">
-              A visitor types their question into the chat — 
-              anytime, day or night.
-            </p>
-          </div>
+                <!-- Step 1 -->
+                <div class="step-item" id="step-1">
+                    <div class="step-number">1️⃣</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Customer Asks a Question</h3>
+                        <p class="step-description">
+                            A visitor types their question into the chat —
+                            anytime, day or night.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Arrow connector -->
+                <div class="step-arrow" aria-hidden="true">↓</div>
+
+                <!-- Step 2 -->
+                <div class="step-item" id="step-2">
+                    <div class="step-number">2️⃣</div>
+                    <div class="step-content">
+                        <h3 class="step-title">AI Searches the Knowledge Base</h3>
+                        <p class="step-description">
+                            The AI instantly scans your FAQ database
+                            to find the best matching answer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Arrow connector -->
+                <div class="step-arrow" aria-hidden="true">↓</div>
+
+                <!-- Step 3 -->
+                <div class="step-item" id="step-3">
+                    <div class="step-number">3️⃣</div>
+                    <div class="step-content">
+                        <h3 class="step-title">AI Responds Instantly</h3>
+                        <p class="step-description">
+                            A helpful, human-like reply is sent back
+                            in milliseconds — no staff needed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Arrow connector -->
+                <div class="step-arrow" aria-hidden="true">↓</div>
+
+                <!-- Step 4 -->
+                <div class="step-item" id="step-4">
+                    <div class="step-number">4️⃣</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Lead Details Are Captured</h3>
+                        <p class="step-description">
+                            If the AI can't answer, it politely collects
+                            the customer's name and contact info for follow-up.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END steps-flow -->
+
         </div>
-
-        <!-- Arrow connector -->
-        <div class="step-arrow" aria-hidden="true">↓</div>
-
-        <!-- Step 2 -->
-        <div class="step-item" id="step-2">
-          <div class="step-number">2️⃣</div>
-          <div class="step-content">
-            <h3 class="step-title">AI Searches the Knowledge Base</h3>
-            <p class="step-description">
-              The AI instantly scans your FAQ database 
-              to find the best matching answer.
-            </p>
-          </div>
-        </div>
-
-        <!-- Arrow connector -->
-        <div class="step-arrow" aria-hidden="true">↓</div>
-
-        <!-- Step 3 -->
-        <div class="step-item" id="step-3">
-          <div class="step-number">3️⃣</div>
-          <div class="step-content">
-            <h3 class="step-title">AI Responds Instantly</h3>
-            <p class="step-description">
-              A helpful, human-like reply is sent back 
-              in milliseconds — no staff needed.
-            </p>
-          </div>
-        </div>
-
-        <!-- Arrow connector -->
-        <div class="step-arrow" aria-hidden="true">↓</div>
-
-        <!-- Step 4 -->
-        <div class="step-item" id="step-4">
-          <div class="step-number">4️⃣</div>
-          <div class="step-content">
-            <h3 class="step-title">Lead Details Are Captured</h3>
-            <p class="step-description">
-              If the AI can't answer, it politely collects 
-              the customer's name and contact info for follow-up.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <!-- END steps-flow -->
-
-    </div>
-  </section>
-  <!-- END HOW IT WORKS SECTION -->
+    </section>
+    <!-- END HOW IT WORKS SECTION -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        DEMO SECTION
        - Live chat window — like ChatGPT interface
        - User can type a message and see how the bot responds
   ============================================================ -->
-  <section id="demo">
-    <div class="section-container">
+    <section id="demo">
+        <div class="section-container">
 
-      <!-- Section heading -->
-      <h2 class="section-title">Try It Live</h2>
-      <p class="section-subtitle">Ask anything — the AI will respond instantly</p>
+            <!-- Section heading -->
+            <h2 class="section-title">Try It Live</h2>
+            <p class="section-subtitle">Ask anything — the AI will respond instantly</p>
 
-      <!-- Chat Window Wrapper -->
-      <div class="chat-window" id="chat-window">
+            <!-- Chat Window Wrapper -->
+            <div class="chat-window" id="chat-window">
 
-        <!-- Chat Header Bar (like WhatsApp / ChatGPT top bar) -->
-        <div class="chat-header">
-          <div class="chat-header-avatar">🤖</div>
-          <div class="chat-header-info">
-            <span class="chat-name">SmartSupport AI</span>
-            <span class="chat-status">● Online</span>
-          </div>
-        </div>
-        <!-- END chat header -->
+                <!-- Chat Header Bar (like WhatsApp / ChatGPT top bar) -->
+                <div class="chat-header">
+                    <div class="chat-header-avatar">🤖</div>
+                    <div class="chat-header-info">
+                        <span class="chat-name">SmartSupport AI</span>
+                        <span class="chat-status">● Online</span>
+                    </div>
+                </div>
+                <!-- END chat header -->
 
-        <!-- Chat Messages Area — messages appear here -->
-        <div class="chat-messages" id="chat-messages">
+                <!-- Chat Messages Area — messages appear here -->
+                <div class="chat-messages" id="chat-messages">
 
-          <!-- Welcome message from the bot (shown by default) -->
-          <div class="message bot-message" id="msg-welcome">
-            <div class="message-avatar">🤖</div>
-            <div class="message-bubble">
-              <p>Hello 👋</p>
-              <p>How can I help you today?</p>
-              <span class="message-time">Just now</span>
+                    <!-- Welcome message from the bot (shown by default) -->
+                    <div class="message bot-message" id="msg-welcome">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-bubble">
+                            <p>Hello 👋</p>
+                            <p>How can I help you today?</p>
+                            <span class="message-time">Just now</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END chat messages -->
+
+                <!-- Chat Input Bar — at the bottom of the chat window -->
+                <div class="chat-input-bar">
+
+                    <!-- Text input field -->
+                    <input type="text" id="chat-input" class="chat-input" placeholder="Type your message here..."
+                        autocomplete="off" />
+
+                    <!-- Send button -->
+                    <button id="btn-send" class="btn-send">
+                        Send ➤
+                    </button>
+
+                </div>
+                <!-- END chat input bar -->
+
             </div>
-          </div>
+            <!-- END chat window -->
 
         </div>
-        <!-- END chat messages -->
-
-        <!-- Chat Input Bar — at the bottom of the chat window -->
-        <div class="chat-input-bar">
-
-          <!-- Text input field -->
-          <input
-            type="text"
-            id="chat-input"
-            class="chat-input"
-            placeholder="Type your message here..."
-            autocomplete="off"
-          />
-
-          <!-- Send button -->
-          <button id="btn-send" class="btn-send">
-            Send ➤
-          </button>
-
-        </div>
-        <!-- END chat input bar -->
-
-      </div>
-      <!-- END chat window -->
-
-    </div>
-  </section>
-  <!-- END DEMO SECTION -->
+    </section>
+    <!-- END DEMO SECTION -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        CONTACT & BUSINESS HOURS SECTION
        - Renamed from "Business Information" — more visitor-friendly
        - "Contact & Business Hours" tells the visitor exactly
          what they'll find here, before they even read the content
        - This is where client-specific info goes
   ============================================================ -->
-  <section id="business">
-    <div class="section-container">
+    <section id="business">
+        <div class="section-container">
 
-      <!-- Section heading -->
-      <h2 class="section-title">Contact & Business Hours</h2>
-      <p class="section-subtitle">We're here when you need us</p>
+            <!-- Section heading -->
+            <h2 class="section-title">Contact & Business Hours</h2>
+            <p class="section-subtitle">We're here when you need us</p>
 
-      <!-- Info cards in a grid -->
-      <div class="business-grid">
+            <!-- Info cards in a grid -->
+            <div class="business-grid">
 
-        <!-- Business Hours Card -->
-        <div class="business-card" id="card-hours">
-          <div class="business-icon">🕐</div>
-          <h3 class="business-label">Business Hours</h3>
-          <p class="business-value">Mon – Fri</p>
-          <p class="business-value">9AM – 6PM</p>
+                <!-- Business Hours Card -->
+                <div class="business-card" id="card-hours">
+                    <div class="business-icon">🕐</div>
+                    <h3 class="business-label">Business Hours</h3>
+                    <p class="business-value">Mon – Fri</p>
+                    <p class="business-value">9AM – 6PM</p>
+                </div>
+
+                <!-- Address Card -->
+                <div class="business-card" id="card-address">
+                    <div class="business-icon">📍</div>
+                    <h3 class="business-label">Address</h3>
+                    <p class="business-value">123 Business Street</p>
+                    <p class="business-value">Mumbai, Maharashtra</p>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="business-card" id="card-phone">
+                    <div class="business-icon">📞</div>
+                    <h3 class="business-label">Phone</h3>
+                    <p class="business-value">+916355579882</p>
+                </div>
+
+                <!-- Email Card -->
+                <div class="business-card" id="card-email">
+                    <div class="business-icon">✉️</div>
+                    <h3 class="business-label">Email</h3>
+                    <p class="business-value">hello@smartsupport.ai</p>
+                </div>
+
+            </div>
+            <!-- END business grid -->
+
         </div>
-
-        <!-- Address Card -->
-        <div class="business-card" id="card-address">
-          <div class="business-icon">📍</div>
-          <h3 class="business-label">Address</h3>
-          <p class="business-value">123 Business Street</p>
-          <p class="business-value">Mumbai, Maharashtra</p>
-        </div>
-
-        <!-- Phone Card -->
-        <div class="business-card" id="card-phone">
-          <div class="business-icon">📞</div>
-          <h3 class="business-label">Phone</h3>
-          <p class="business-value">+91 98765 43210</p>
-        </div>
-
-        <!-- Email Card -->
-        <div class="business-card" id="card-email">
-          <div class="business-icon">✉️</div>
-          <h3 class="business-label">Email</h3>
-          <p class="business-value">hello@smartsupport.ai</p>
-        </div>
-
-      </div>
-      <!-- END business grid -->
-
-    </div>
-  </section>
-  <!-- END BUSINESS INFO SECTION -->
+    </section>
+    <!-- END BUSINESS INFO SECTION -->
 
 
-  <!-- NOTE FOR DEVELOPERS:
+    <!-- NOTE FOR DEVELOPERS:
        The 5-stage build roadmap has been intentionally removed from the public page.
        Clients should see a finished product, not a construction timeline.
        Refer to README.md for the full project build plan.
   -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        FOOTER
        - Bottom of the page
        - Copyright and quick links
   ============================================================ -->
-  <footer id="footer">
-    <div class="footer-container">
+    <footer id="footer">
+        <div class="footer-container">
 
-      <!-- Footer Brand -->
-      <div class="footer-brand">
-        <span>🤖 SmartSupport AI</span>
-        <p class="footer-tagline">AI Customer Support, built for modern businesses.</p>
-      </div>
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+                <span>🤖 SmartSupport AI</span>
+                <p class="footer-tagline">AI Customer Support, built for modern businesses.</p>
+            </div>
 
-      <!-- Footer Links — kept in sync with navbar items -->
-      <ul class="footer-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#business">Contact & Hours</a></li>
-      </ul>
+            <!-- Footer Links — kept in sync with navbar items -->
+            <ul class="footer-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#business">Contact & Hours</a></li>
+            </ul>
 
-      <!-- Copyright -->
-      <p class="footer-copy">© 2025 SmartSupport AI. All rights reserved.</p>
+            <!-- Copyright -->
+            <p class="footer-copy">© 2025 SmartSupport AI. All rights reserved.</p>
 
-    </div>
-  </footer>
-  <!-- END FOOTER -->
+        </div>
+    </footer>
+    <!-- END FOOTER -->
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        JavaScript — loaded in dependency order.
        Rule: A file can only use functions defined in files
        loaded BEFORE it. This order enforces that contract.
@@ -472,12 +467,12 @@
        5. chatbot.js  → bot engine, uses faq-data + utils + storage
        6. app.js      → entry point, uses everything above
   ============================================================ -->
-  <script src="js/utils.js"></script>
-  <script src="js/storage.js"></script>
-  <script src="js/faq-data.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/chatbot.js"></script>
-  <script src="js/app.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/faq-data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
