@@ -25,9 +25,10 @@ Answers FAQs instantly. Captures leads automatically. Works 24/7.
 
 ## 🎥 Demo Video
 
-[![Watch Demo](assets/screenshots/homepage.jpeg)](assets/screenshots/smartai.mp4)
+[![Watch Demo](assets/screenshots/homepage.jpeg)](https://www.loom.com/share/YOUR_LOOM_LINK_HERE)
 
-> Click the image above to watch the 45-second demo, or [download it directly](assets/screenshots/smartai.mp4).
+> 📌 **[Click to watch the 60-second demo →](https://www.loom.com/share/YOUR_LOOM_LINK_HERE)**  
+> *(Replace this link with your actual Loom or YouTube URL)*
 
 ---
 

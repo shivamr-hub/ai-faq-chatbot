@@ -48,6 +48,12 @@ build/
 # --- Log files ---
 *.log
 
+# --- Video files (too large for GitHub — host on YouTube or Loom instead) ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+
 # --- Temporary files ---
 *.tmp
 *.bak
